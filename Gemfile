@@ -8,5 +8,6 @@ gem "capybara"
 gem "selenium-webdriver"
 gem "shotgun"
 gem "sinatra"
+gem 'time_difference'
 gem "rubocop"
 gem "rspec"
