@@ -5,10 +5,13 @@
   </head>
   <body>
     <div class="container">
-        <% if @month.to_i == @month && @date.to_i == @day %>
-          <h1>Happy Birthday <%= @name %>!</h1>
+        
+        <% if @month.to_i == @month_now && @date.to_i == @day %>
+          <img src="/img/1.png" width="300px">
+          <h1 class="result">Happy Birthday <%= @name %>!</h1>
         <% else %>
-          <h1>Coming Soon</h1>
+          <img src="/img/2.png" width="300px">
+          <h1 class="result">Your birthday will be in <%= @difference %> <%= @difference > 1 ? "days" : "day" %> <%= @name %>!</h1>
         <% end %>
     </div>
 
