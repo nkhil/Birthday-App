@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'time_difference'
 
 class Birthday < Sinatra::Base
 
@@ -21,8 +22,10 @@ class Birthday < Sinatra::Base
     @date = session[:date]
     @month = session[:month]
     @time = Time.new
-    @month = @time.month
+    @birthday = Time.new(2019, @month, @date)
+    @month_now = @time.month
     @day = @time.day
+    @difference = (TimeDifference.between(@time, @birthday).in_days).ceil
     erb :greet
   end
 
