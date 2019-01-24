@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <div class="container">
+        <% if @month.to_i == @month && @date.to_i == @day %>
+          <h1>Happy Birthday <%= @name %>!</h1>
+        <% else %>
+          <h1>Coming Soon</h1>
+        <% end %>
+    </div>
+
+  </body>
+
+</html>
