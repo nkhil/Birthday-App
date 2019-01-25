@@ -26,8 +26,22 @@ body {
 
 .container h1 {
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 300;
   text-align: center;
+}
+
+.container p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+input[type=submit] {
+  padding:5px 50px; 
+  background:rgb(255, 87, 87); 
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
 }
 
 .container form {
@@ -35,14 +49,16 @@ body {
   text-align: center;
 }
 
-.container label {
-  padding: 15px;
+.content label {
+  /* margin: 5px 0; */
   text-align: center;
+  font-size: 1.2rem;
+  margin: 20px 0;
 }
 
 .container input {
   font-size: 1rem;
-  padding: 3px;
+  margin: 10px 0;
 }
 
 #date {
