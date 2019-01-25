@@ -11,7 +11,10 @@
           <h1 class="result">Happy Birthday <%= @name %>!</h1>
         <% else %>
           <img src="/img/2.png" width="300px">
-          <h1 class="result">Your birthday will be in <%= @difference %> <%= @difference > 1 ? "days" : "day" %> <%= @name %>!</h1>
+          <h1 class="result">
+            Your birthday will be in <%= @difference %> 
+            <%= @difference > 1 ? "days" : "day" %> <%= @name %>!
+          </h1>
         <% end %>
     </div>
 
